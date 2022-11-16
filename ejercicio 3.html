@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let gen=150,mayores=50,menores=80;
+    
+        let gen_can = +prompt('Ingresar cantidad de entradas generales: ')
+        let may_can = +prompt('Ingresar cantidad de entradas para mayores de 65: ')
+        let men_can = +prompt('Ingresar cantidad de entradas para menores de edad: ')
+    
+        document.write(gen_can + ' entradas de concepto general, recaudado: '+(gen_can*gen))
+        document.write('<br/>'+may_can + ' entradas de concepto mayores de 65 años, recaudado: '+(may_can*mayores))
+        document.write('<br/>'+men_can + ' entradas de concepto menores de edad, recaudado: '+(men_can*menores))
+        document.write('<br/>Total recaudado: '+((gen_can*gen)+(may_can*mayores)+(men_can*menores)))
+        
+    </script>
+</body>
+</html>

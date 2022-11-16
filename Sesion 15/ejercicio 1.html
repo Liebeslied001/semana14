@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let monto = +prompt('Ingrese el importe de compra')
+
+        if(monto>=150){
+            let desc = monto*0.12
+            document.write('Obtuviste un descuento de: '+ desc)
+            document.write('<br/>Importe de Compra final: '+(monto-desc))
+        }else{
+            document.write('No obtuvo descuento')
+            document.write('<br/>Importe de Compra final: '+monto)
+            
+        }
+    </script>
+
+
+</body>
+</html>

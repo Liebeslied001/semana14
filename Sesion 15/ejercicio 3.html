@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt('Ingresar nombre del trabajador')
+        let sueldo = +prompt('Ingrese sueldo basico: ')
+        let hijos = +prompt('Ingrese cantidad de hijos: ')
+
+        if(hijos>0){
+            document.write('Nombre del trabajador: '+nombre)
+            document.write('<br/>Sueldo Basico: '+sueldo)
+            document.write('<br/>Bonificacion por hijos: '+(sueldo*0.07))
+            document.write('<br/>Promedio final: '+(sueldo+(sueldo*0.07)))
+        }else{
+            document.write('No recibe bonificacion')
+            document.write('<br/>Sueldo final: '+sueldo)
+        }
+
+
+
+
+    </script>
+</body>
+</html>

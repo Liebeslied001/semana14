@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt('Ingresar nombre del alumno')
+        let prom_prac = +prompt('Ingrese promedio de practicas: ')
+        let parcial = +prompt('Ingrese nota del examen parcial: ')
+        let final = +prompt('Ingrese nota del examen final: ')
+
+        let prom_fin = (((prom_prac+parcial)/2)+(final))/2
+
+        if(final=>12){
+            document.write('Nombre del alumno: '+nombre)
+            document.write('<br/>Promedio final: '+prom_fin)
+        }else{
+            document.write('DESAPROBADO')
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
